@@ -248,3 +248,36 @@ export function AiReviewCard({
               {result.plainLanguageSummary}
             </p>
             <p
+             data-testid="ai-uncertain-note"
+              className="text-xs font-medium text-[#566B64] pt-1.5 border-t border-[#DFDAD0]"
+            >
+              {ar.uncertainNote}
+            </p>
+          </div>
+
+          {result.insufficientEvidenceNote && (
+            <div
+              style={{
+                backgroundColor: 'var(--status-neutral-bg)',
+                borderColor: 'var(--status-neutral-border)',
+              }}
+              className="p-3.5 rounded-[var(--radius-md)] border space-y-1"
+            >
+              <div className="text-xs font-semibold text-[#3F4744]">
+                {ar.insufficientEvidenceHeading}
+              </div>
+              <p className="text-xs sm:text-sm text-[#355049] leading-relaxed">
+                {result.insufficientEvidenceNote}
+              </p>
+            </div>
+          )}
+
+          {result.warningSigns.length > 0 ? (
+            <div className="space-y-2.5">
+              <h4 className="text-xs font-semibold uppercase tracking-wider text-[#566B64]">
+                {ar.warningSignsHeading}
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {result.warningSigns.map((sign, idx) => (
+                  <div
+                    key={`${sign.title}-${idx}`}
