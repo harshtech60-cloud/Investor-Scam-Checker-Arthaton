@@ -26,7 +26,7 @@ export type NavSection =
   | 'how-it-works'
   | 'about';
 
-export type PostIncidentChoice =
+export type PostIncidentChoice 
   | 'paid'
   | 'shared_secret'
   | 'clicked_or_installed'
