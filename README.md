@@ -5,7 +5,7 @@
 
 A pre-payment risk check for Indian retail investors. Paste a message, upload a screenshot, or scan a UPI QR, and see which warning signs are present, in 12 languages, with a direct hand-off to the official SEBI, RBI and cyber-crime portals.
 
-[**Live demo**](https://remix-investor-scam-check-4270.ai.studio) · Built for the **Arthaton Finance Hackathon** (theme: *Investor Scam Check*)
+Run the app either by live link provided on the side bar or by clicking on the live demo here - [**Live demo**](https://remix-investor-scam-check-4270.ai.studio) · Built for the **Arthaton Finance Hackathon** (theme: *Investor Scam Check*)
 
 ## The problem:-
 
