@@ -150,3 +150,37 @@ export function AiReviewCard({
       )}
 
       {/* Loading State */}
+      {status === 'loading' && (
+        <div className="p-4 rounded-[var(--radius-md)] bg-[#F7F5EE] border border-[#DFDAD0] flex items-center gap-3 text-sm text-[#355049]">
+          <Loader2
+            className="w-4 h-4 text-[#214D41] animate-spin shrink-0"
+            aria-hidden="true"
+          />
+          <span>{ar.loadingBtn}</span>
+        </div>
+      )}
+
+      {/* Honest Unavailable Fallback State */}
+      {status === 'unavailable' && (
+        <div
+          role="status"
+          data-testid="ai-review-unavailable"
+          style={{
+            backgroundColor: 'var(--status-caution-bg)',
+            borderColor: 'var(--status-caution-border)',
+          }}
+          className="p-4 rounded-[var(--radius-md)] border space-y-2.5 isc-panel-reveal"
+        >
+          <div className="flex items-start gap-2.5">
+            <AlertTriangle
+              className="w-4 h-4 shrink-0 mt-0.5"
+              style={{ color: 'var(--status-caution-icon)' }}
+              aria-hidden="true"
+            />
+            <div className="space-y-1 min-w-0">
+              <h4
+                className="text-sm font-semibold"
+                style={{ color: 'var(--status-caution-text)' }}
+              >
+                {ar.unavailableTitle}
+              </h4>
