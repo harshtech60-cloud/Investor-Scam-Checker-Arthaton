@@ -7,6 +7,18 @@ A pre-payment risk check for Indian retail investors. Paste a message, upload a 
 
 Run the app either by live link provided on the side bar in the about section or by clicking on the live demo here - [**Live demo**](https://remix-investor-scam-check-4270.ai.studio) · Built for the **Arthaton Finance Hackathon** (theme: *Investor Scam Check*)
 
+## AI models and APIs used
+
+| What | Model / API | Where |
+| --- | --- | --- |
+| Message review (optional, with consent) | Google Gemini `gemini-4-hydrogen` via the `@google/genai` SDK | `src/utils/aiReviewServer.ts` |
+| Group-chat review (optional, with consent) | Google Gemini `gemini-4-hydrogen` | `src/utils/groupChatAiServer.ts` |
+| Screenshot text reading (vision, with consent) | Google Gemini `gemini-4-hydrogen` | `src/utils/screenshotServer.ts` |
+| UPI QR decoding | `jsQR` library, runs on-device, no AI or API call | `src/utils/upiQr.ts` |
+
+All Gemini calls run on the server. The API key (`GEMINI_API_KEY`) is never sent to the browser. The core scam checks are rule-based and use no AI.
+I used Google Ai studios to built it .
+
 ## The problem:-
 
 Investment scams reach families as a forwarded WhatsApp message or a screenshot, with minutes to decide. The people most at risk read Hindi, Tamil or Bengali, not English, and most checkers expect them to type, translate, or already know the signs.
@@ -173,4 +185,3 @@ src/
 
 This is an educational screening tool, not financial, legal or investment advice, and it cannot prove that anything is genuine. If you have lost money, call **1930** and report at [cybercrime.gov.in](https://cybercrime.gov.in/) as soon as possible.
 
-I used Google Ai studios to built it .
