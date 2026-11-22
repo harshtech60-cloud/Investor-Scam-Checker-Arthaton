@@ -1,4 +1,4 @@
-import test from 'node:test'
+import test from 'node:test';
 import assert from 'node:assert/strict';
 import { OFFICIAL_PORTAL_LINKS } from '../components/OfficialSourcesCard';
 import { getCopy } from '../data/translations';
