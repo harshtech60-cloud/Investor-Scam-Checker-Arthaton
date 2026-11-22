@@ -312,3 +312,38 @@ export function AiReviewCard({
               {result.noSafeProofNote}
             </div>
           )}
+
+                 {result.practicalNextSteps.length > 0 && (
+            <div className="space-y-2">
+              <h4 className="text-xs font-semibold uppercase tracking-wider text-[#566B64]">
+                {ar.nextStepsHeading}
+              </h4>
+              <ol className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+                {result.practicalNextSteps.map((step, idx) => (
+                  <li
+                    key={idx}
+                    className="p-3.5 rounded-[var(--radius-md)] bg-[#F7F5EE] border border-[#DFDAD0] flex items-start gap-2.5 text-xs sm:text-sm text-[#183A32]"
+                  >
+                    <span className="font-mono-data text-xs font-semibold text-[#214D41] shrink-0 pt-0.5">
+                      0{idx + 1}
+                    </span>
+                    <span className="leading-relaxed">{step}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
+
+          <div className="pt-3 border-t border-[#DFDAD0] space-y-1 text-xs text-[#566B64] leading-relaxed">
+            <p>
+              <strong className="text-[#183A32]">{ar.limitationsHeading}:</strong>{' '}
+              {result.verificationUnavailableNote}
+            </p>
+            <p>{result.disclaimerNote}</p>
+          </div>
+        </div>
+      )}
+    </section>
+  );
+}
+
