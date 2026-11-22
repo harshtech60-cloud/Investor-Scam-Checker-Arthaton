@@ -1,5 +1,5 @@
 # Investor-Scam-Checker-Arthaton - Project repository for our  team’s Arthaton Hackathon solution.
-# 🛡️ Investor Scam Check =
+# 🛡️ Investor Scam Check :
 
 **A second opinion in your family's language, before the money moves.**
 
