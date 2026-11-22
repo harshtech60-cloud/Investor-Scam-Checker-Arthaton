@@ -39,3 +39,27 @@ export function AboutView({ language, onStartCheck }: AboutViewProps) {
         <p className="text-sm sm:text-base text-[#355049] leading-relaxed">
           {copy.about.intro}
         </p>
+        </motion.section>
+
+      {/* Design Principles */}
+      <section aria-labelledby="principles-heading" className="space-y-4">
+        <h2
+          id="principles-heading"
+          className="font-editorial text-xl sm:text-2xl font-semibold text-[#183A32]"
+        >
+          {copy.about.principlesTitle}
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {copy.about.principles.map((item, index) => {
+            const Icon = principleIcons[index];
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0.2, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.22,
+                  delay: 0.04 + index * 0.045,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
+                className="isc-sheet p-5 sm:p-6 space-y-3 hover:border-[#9BC4AC] transition-colors duration-200">
