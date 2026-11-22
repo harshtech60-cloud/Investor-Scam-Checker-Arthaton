@@ -48,7 +48,7 @@ Advice and awareness text is not flagged: "police never ask you to transfer mone
                                                    ||
                                        Risk indicatorsnever 'safe'
                                                    ||
-                            -- Official hand-offsSEBI Check · RBI · NPCI ·1930 --
+                            -- Official hand-offs SEBI Check · RBI · NPCI ·1930 --
 - **Rules first.** The checks run locally with no network call, so the core result is instant, free and explainable: every flag points at the exact words that caused it.
 - **AI is optional and consent-gated.** Gemini adds a plain-language review only after you click **Continue**. The Gemini key lives on the server and is never sent to the browser.
 - **It never says "safe".** The possible outcomes are "warning signs found" and "no listed warning signs found", always with a reminder to verify on the official portals.
