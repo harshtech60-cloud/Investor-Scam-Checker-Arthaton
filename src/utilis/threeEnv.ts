@@ -6,7 +6,7 @@ let cachedSoftwareGl: boolean | null = null;
  * Detect software WebGL renderers (SwiftShader, llvmpipe, softpipe, etc.)
  * from the WebGL renderer string rather than user agent.
  */
-export function detectSoftwareWebGL(): boolean 
+export function detectSoftwareWebGL(): boolean {
   if (cachedSoftwareGl !== null) return cachedSoftwareGl;
   if (typeof document === 'undefined') return false;
 
