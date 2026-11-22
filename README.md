@@ -7,7 +7,7 @@ A pre-payment risk check for Indian retail investors. Paste a message, upload a 
 
 [**Live demo**](https://remix-investor-scam-check-4270.ai.studio) · Built for the **Arthaton Finance Hackathon** (theme: *Investor Scam Check*)
 
-## The problem
+## The problem:-
 
 Investment scams reach families as a forwarded WhatsApp message or a screenshot, with minutes to decide. The people most at risk read Hindi, Tamil or Bengali, not English, and most checkers expect them to type, translate, or already know the signs.
 
