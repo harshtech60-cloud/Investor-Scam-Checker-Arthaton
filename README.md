@@ -7,6 +7,8 @@ A pre-payment risk check for Indian retail investors. Paste a message, upload a 
 
 Run the app either by live link provided on the side bar in the about section or by clicking on the live demo here - [**Live demo**](https://remix-investor-scam-check-4270.ai.studio) · Built for the **Arthaton Finance Hackathon** (theme: *Investor Scam Check*)
 
+Youtube Video - https://youtu.be/psmddvoofOM
+
 ## AI models and APIs used
 
 | What | Model / API | Where |
