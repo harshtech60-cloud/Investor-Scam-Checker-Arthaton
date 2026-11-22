@@ -184,3 +184,35 @@ export function AiReviewCard({
               >
                 {ar.unavailableTitle}
               </h4>
+              <p className="text-xs sm:text-sm text-[#355049] leading-relaxed">
+                {unavailableReason === 'not_configured'
+                  ? ar.unavailableNotConfigured
+                  : ar.unavailableError}
+              </p>
+            </div>
+          </div>
+
+          {unavailableReason !== 'not_configured' && (
+            <div className="sm:pl-6">
+              <button
+                type="button"
+                onClick={onRequestReview}
+                className="isc-btn-secondary !min-h-[36px]"
+              >
+                <span>{ar.triggerBtn}</span>
+              </button>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Structured AI Review Result */}
+      {status === 'success' && result && (
+        <div data-testid="ai-review-result" className="space-y-4 isc-panel-reveal">
+          <div className="p-4 rounded-[var(--radius-md)] bg-[#F7F5EE] border border-[#DFDAD0] space-y-2.5">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <span
+                style={
+                  result.verdict === 'warning_signs_found'
+                    ? {
+                        
