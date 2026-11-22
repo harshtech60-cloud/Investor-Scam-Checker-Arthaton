@@ -29,4 +29,13 @@ export function AboutView({ language, onStartCheck }: AboutViewProps) {
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.24, ease: [0.16, 1, 0.3, 1] }}
-        
+        className="max-w-3xl space-y-2.5 pb-6 border-b border-[#DFDAD0]">
+        <p className="text-xs font-semibold uppercase tracking-wider text-[#214D41]">
+          {copy.about.kicker}
+        </p>
+        <h1 className="font-editorial text-3xl sm:text-[2.3rem] font-semibold tracking-tight text-[#183A32] text-balance leading-[1.15]">
+          {copy.about.title}
+        </h1>
+        <p className="text-sm sm:text-base text-[#355049] leading-relaxed">
+          {copy.about.intro}
+        </p>
