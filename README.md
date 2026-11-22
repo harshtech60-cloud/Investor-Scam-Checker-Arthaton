@@ -173,3 +173,4 @@ src/
 
 This is an educational screening tool, not financial, legal or investment advice, and it cannot prove that anything is genuine. If you have lost money, call **1930** and report at [cybercrime.gov.in](https://cybercrime.gov.in/) as soon as possible.
 
+I used Google Ai studios to built it .
