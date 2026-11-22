@@ -1,7 +1,7 @@
 # Investor-Scam-Checker-Arthaton - Project repository for our  team’s Arthaton Hackathon solution.
 # 🛡️ Investor Scam Check :
 
-**A second opinion in your family's language, before the money moves.*
+**A second opinion in your family's language, before the money moves.**
 
 A pre-payment risk check for Indian retail investors. Paste a message, upload a screenshot, or scan a UPI QR, and see which warning signs are present, in 12 languages, with a direct hand-off to the official SEBI, RBI and cyber-crime portals.
 
