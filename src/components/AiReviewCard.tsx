@@ -122,4 +122,31 @@ export function AiReviewCard({
               >
                 {ar.consentTitle}
               </h4>
-              
+                           <p className="text-xs sm:text-sm text-[#355049] leading-relaxed">
+                {ar.consentBody}
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2.5 sm:pl-7">
+            <button
+              type="button"
+              onClick={onContinueConsent}
+              data-testid="ai-consent-continue-btn"
+              className="isc-btn-primary !min-h-[42px]"
+            >
+              <span>{ar.consentContinueBtn}</span>
+            </button>
+            <button
+              type="button"
+              onClick={onUseDemoOnly}
+              data-testid="ai-consent-demo-only-btn"
+              className="isc-btn-secondary !min-h-[42px] !px-4 !text-sm"
+            >
+              <span>{ar.consentDemoOnlyBtn}</span>
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Loading State */}
