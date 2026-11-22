@@ -169,7 +169,7 @@ src/
 - A learned classifier trained on labelled real-world messages, reported next to the rules
 - A WhatsApp share target / installable PWA, so a forwarded message opens straight into the check
 
-## Disclaimer
+## Disclaimer !!
 
 This is an educational screening tool, not financial, legal or investment advice, and it cannot prove that anything is genuine. If you have lost money, call **1930** and report at [cybercrime.gov.in](https://cybercrime.gov.in/) as soon as possible.
 
