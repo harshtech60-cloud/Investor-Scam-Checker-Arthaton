@@ -24,7 +24,7 @@ Investment scams reach families as a forwarded WhatsApp message or a screenshot,
 
 The four clues (message, SEBI claim, link, payment detail) are shown together so you can see where they agree or conflict, and a printable **family summary** can be handed to a parent.
 
-### Scam patterns it recognises
+### Scam patterns it recognises.
 
 - Guaranteed or very high returns, "sure-shot" calls, lakh/crore income promises
 - Urgency and pressure to pay now; registration, unlock and withdrawal-tax fees
