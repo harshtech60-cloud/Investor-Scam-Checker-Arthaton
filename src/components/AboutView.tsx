@@ -8,3 +8,14 @@ import { ScrollReveal } from './ScrollReveal';
 interface AboutViewProps {
   language: Language;
   onStartCheck: () => void;
+
+}
+
+const RESOURCE_URLS = [
+  'https://investor.sebi.gov.in/Investor-support.html',
+  'https://scores.sebi.gov.in/',
+  'https://cybercrime.gov.in/',
+  'https://sachet.rbi.org.in/',
+] as const;
+
+export function AboutView({ language, onStartCheck }: AboutViewProps) 
