@@ -248,7 +248,7 @@ export function AiReviewCard({
               {result.plainLanguageSummary}
             </p>
             <p
-             data-testid="ai-uncertain-note"
+              data-testid="ai-uncertain-note"
               className="text-xs font-medium text-[#566B64] pt-1.5 border-t border-[#DFDAD0]"
             >
               {ar.uncertainNote}
