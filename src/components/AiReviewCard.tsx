@@ -281,3 +281,34 @@ export function AiReviewCard({
                 {result.warningSigns.map((sign, idx) => (
                   <div
                     key={`${sign.title}-${idx}`}
+                    className="p-4 rounded-[var(--radius-md)] bg-[#FBF1EE]/75 border border-[#DFDAD0] space-y-2"
+                  >
+                    <div className="text-sm font-semibold text-[#183A32]">
+                      {sign.title}
+                    </div>
+                    <div className="space-y-1">
+                      <span className="text-[11px] font-medium text-[#566B64] block">
+                        {ar.supportingPhraseLabel}
+                      </span>
+                      <span className="inline-block text-xs font-mono-data text-[#183A32] bg-[#FFFEFA] border border-[#C9C2B4] px-2.5 py-1 rounded-[var(--radius-sm)] break-words">
+                        &ldquo;{sign.supportingPhrase}&rdquo;
+                      </span>
+                    </div>
+                    <p className="text-xs sm:text-sm text-[#355049] leading-relaxed">
+                      {sign.explanation}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <div
+              style={{
+                backgroundColor: 'var(--status-neutral-bg)',
+                borderColor: 'var(--status-neutral-border)',
+              }}
+              className="p-3.5 rounded-[var(--radius-md)] border text-xs sm:text-sm text-[#183A32] leading-relaxed"
+            >
+              {result.noSafeProofNote}
+            </div>
+          )}
