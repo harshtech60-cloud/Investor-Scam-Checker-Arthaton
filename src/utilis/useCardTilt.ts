@@ -1,5 +1,5 @@
 import { useCallback, useState, type PointerEvent } from 'react';
-import { computeCardPointerTilt } from './editorialMotion';
+import { computeCardPointerTilt } from './editorialMotion'
 import { prefersReducedMotion } from './motionPreferences';
 
 export function useCardTilt(maxDeg = 2.8) {
