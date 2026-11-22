@@ -40,7 +40,7 @@ Advice and awareness text is not flagged: "police never ask you to transfer mone
 
 ---
 
-## How it works
+## How it works??
 
                          Message · screenshot · link· UPI / QR - only after you consent 
                                                    ||
