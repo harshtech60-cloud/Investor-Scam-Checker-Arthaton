@@ -85,3 +85,34 @@ export function AboutView({ language, onStartCheck }: AboutViewProps) {
       </ScrollReveal>
 
       {/* Official Indian Verification & Reporting Directory */}
+      <ScrollReveal delay={0.05}>
+      <section aria-labelledby="directory-heading" className="isc-sheet p-5 sm:p-7 space-y-5">
+        <div className="space-y-1.5">
+          <h2
+            id="directory-heading"
+            className="font-editorial text-xl font-semibold text-[#183A32]"
+          >
+            {copy.about.directoryTitle}
+          </h2>
+          <p className="text-sm text-[#355049]">{copy.about.directoryNote}</p>
+        </div>
+
+        <div className="divide-y divide-[#DFDAD0] border-t border-b border-[#DFDAD0]">
+          {copy.about.resources.map((res, idx) => (
+            <a
+              key={idx}
+              href={RESOURCE_URLS[idx] ?? 'https://investor.sebi.gov.in/'}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="py-4 px-2 -mx-2 rounded-[var(--radius-sm)] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 hover:bg-[#EAF4EE]/60 transition-colors isc-focus-ring group"
+            >
+              <div>
+                <h3 className="text-base font-semibold text-[#183A32] group-hover:text-[#214D41] transition-colors">
+                  {res.name}
+                </h3>
+                <p className="text-sm text-[#355049] mt-0.5">{res.detail}</p>
+              </div>
+              <ExternalLink
+                className="w-4 h-4 text-[#214D41] shrink-0 hidden sm:block transition-transform duration-150 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                aria-hidden="true"
+              />
