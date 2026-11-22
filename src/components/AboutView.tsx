@@ -62,4 +62,26 @@ export function AboutView({ language, onStartCheck }: AboutViewProps) {
                   delay: 0.04 + index * 0.045,
                   ease: [0.16, 1, 0.3, 1],
                 }}
-                className="isc-sheet p-5 sm:p-6 space-y-3 hover:border-[#9BC4AC] transition-colors duration-200">
+                className="isc-sheet p-5 sm:p-6 space-y-3 hover:border-[#9BC4AC] transition-colors duration-200"
+                >
+                <div className="w-10 h-10 rounded-[var(--radius-md)] bg-[#D8EBDF] border border-[#9BC4AC] text-[#183A32] flex items-center justify-center">
+                  <Icon className="w-4 h-4" aria-hidden="true" />
+                </div>
+                <h3 className="font-editorial text-lg font-semibold text-[#183A32]">
+                  {item.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-[#355049] leading-relaxed">
+                  {item.desc}
+                </p>
+              </motion.div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* Prominent Official Verification Portals */}
+      <ScrollReveal>
+        <OfficialSourcesCard language={language} />
+      </ScrollReveal>
+
+      {/* Official Indian Verification & Reporting Directory */}
