@@ -134,3 +134,4 @@ export function AboutView({ language, onStartCheck }: AboutViewProps) {
       </ScrollReveal>
     </div>
   );
+}
