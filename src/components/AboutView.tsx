@@ -3,7 +3,7 @@ import { ArrowRight, BookOpen, ExternalLink, HeartHandshake, ShieldCheck } from 
 import type { Language } from '../types/check';
 import { getCopy } from '../data/translations';
 import { OfficialSourcesCard } from './OfficialSourcesCard';
-
+import { ScrollReveal } from './ScrollReveal';
 
 interface AboutViewProps {
   language: Language;
