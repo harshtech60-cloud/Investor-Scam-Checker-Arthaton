@@ -215,4 +215,36 @@ export function AiReviewCard({
                 style={
                   result.verdict === 'warning_signs_found'
                     ? {
-                        
+                        backgroundColor: 'var(--status-danger-bg)',
+                        borderColor: 'var(--status-danger-border)',
+                        color: 'var(--status-danger-text)',
+                      }
+                    : {
+                        backgroundColor: 'var(--status-neutral-bg)',
+                        borderColor: 'var(--status-neutral-border)',
+                        color: 'var(--status-neutral-text)',
+                      }
+                }
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-[var(--radius-sm)] border text-xs font-semibold"
+              >
+                {result.verdict === 'warning_signs_found' ? (
+                  <ShieldAlert className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />
+                ) : (
+                  <CheckCircle2 className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />
+                )}
+                <span>{result.verdictLabel}</span>
+              </span>
+
+              <button
+                type="button"
+                onClick={onRequestReview}
+                className="text-xs font-semibold text-[#214D41] hover:underline underline-offset-4 isc-focus-ring rounded"
+              >
+                {ar.triggerBtn}
+              </button>
+            </div>
+
+            <p className="text-xs sm:text-sm text-[#183A32] leading-relaxed">
+              {result.plainLanguageSummary}
+            </p>
+            <p
