@@ -1,0 +1,8 @@
+{
+  "name": "Remix Investor Scam Check",
+  "description": "Pre-payment risk indicator check for Indian retail investors connecting investment messages, claimed SEBI registrations, links, and payment handles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
