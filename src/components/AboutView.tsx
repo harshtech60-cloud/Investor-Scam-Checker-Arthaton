@@ -116,3 +116,21 @@ export function AboutView({ language, onStartCheck }: AboutViewProps) {
                 className="w-4 h-4 text-[#214D41] shrink-0 hidden sm:block transition-transform duration-150 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                 aria-hidden="true"
               />
+             </a>
+          ))}
+        </div>
+
+        <div className="pt-1">
+          <button
+            type="button"
+            onClick={onStartCheck}
+            className="isc-btn-primary"
+          >
+            <span>{copy.nav.checkMessage}</span>
+            <ArrowRight className="w-4 h-4 shrink-0" aria-hidden="true" />
+          </button>
+        </div>
+      </section>
+      </ScrollReveal>
+    </div>
+  );
